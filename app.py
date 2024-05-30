@@ -83,13 +83,13 @@ def vector_embeddings():
         st.session_state.final_documents = st.session_state.text_splitter.split_documents(st.session_state.docs[:20])  # Document splitting
         st.session_state.vectors = FAISS.from_documents(st.session_state.final_documents, st.session_state.embeddings)  # Vector Huggingface Embedding
 
-
+prompt1 = st.text_input("Enter the Question from your Mind:")
 
 if st.button("Document Embeddings"):
     vector_embeddings()
     st.write("Vector store DB is Ready.")
 
-prompt1 = st.text_input("Enter the Question from your Mind:")
+
 
 if prompt1:
     document_chain = create_stuff_documents_chain(llm, prompt)
