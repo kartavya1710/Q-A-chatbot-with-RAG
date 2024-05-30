@@ -33,7 +33,7 @@ To get started with the Q&A Time Reminder Chatbot, follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/qa-time-reminder-chatbot.git
+   git clone https://github.com/kartavya1710/Q-and-A-chatbot-with-RAG.git
    ```
 
 2. **Install dependencies:**
@@ -59,3 +59,5 @@ To get started with the Q&A Time Reminder Chatbot, follow these steps:
 Thank you for checking out the Q&A Time Reminder Chatbot! We hope you find it useful and look forward to your feedback and contributions.
 
 ---
+
+HAPPY LEARNING
