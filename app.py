@@ -20,7 +20,7 @@ load_dotenv()
 # Load groq API Keys.
 groq_api_key = "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"
 
-st.title("Q&A ChatBot with RAG (LLAMA3) :sparkles:")
+st.title("Q&A ChatBot with RAG (LLAMA3)  :sparkles:")
 
 llm = ChatGroq(groq_api_key=groq_api_key, model_name="llama3-8b-8192")
 
@@ -83,13 +83,13 @@ def vector_embeddings():
         st.session_state.final_documents = st.session_state.text_splitter.split_documents(st.session_state.docs[:20])  # Document splitting
         st.session_state.vectors = FAISS.from_documents(st.session_state.final_documents, st.session_state.embeddings)  # Vector Huggingface Embedding
 
-prompt1 = st.text_input("Enter the Question from your Mind:")
+
 
 if st.button("Document Embeddings"):
     vector_embeddings()
     st.write("Vector store DB is Ready.")
 
-
+prompt1 = st.text_input("Enter the Question from your Mind:")
 
 if prompt1:
     document_chain = create_stuff_documents_chain(llm, prompt)
