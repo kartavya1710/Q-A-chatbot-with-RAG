@@ -1,7 +1,3 @@
-# Q-A-chatbot-with-RAG
-
-Certainly! Here's a detailed GitHub description for your Q&A Time Reminder Chatbot project:
-
 ---
 
 # Q&A Time Reminder Chatbot
