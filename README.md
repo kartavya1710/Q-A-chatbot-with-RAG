@@ -37,9 +37,8 @@ To get started with the Q&A Time Reminder Chatbot, follow these steps:
    ```
 
 2. **Install dependencies:**
-   ```bash
-   cd qa-time-reminder-chatbot
-   pip install -r requirements.txt
+   ```
+    pip install -r requirements.txt
    ```
 
 3. **Configure environment variables:** Set up the necessary environment variables as per the `.env.example` file.
